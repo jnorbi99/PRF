@@ -1,0 +1,16 @@
+<div id="wrapper">
+    <div>
+        <h2>Users</h2>
+        <div id='todoList'>
+            <div id="name">Username</div>
+            <div id="desc">Email</div>
+            <div>Delete User</div>
+        </div>
+        <div id='todoList' *ngFor="let user of users">
+            <div id="name">{{user.username}}</div>
+            <div id="desc">{{user.email}}</div>
+            <button (click)="deleteUser(user)">Delete User</button>
+        </div>
+    </div>
+    <button id="logout" (click)="logout()">Logout</button>
+</div>

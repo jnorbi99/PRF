@@ -1,0 +1,25 @@
+<div>
+    <h2>Change Todo Description</h2>
+    <div>
+        <p>Todo</p>
+        <div >
+            <div id="todo">
+                <p>Name</p>
+                <p >{{todoName}}</p>
+            </div>
+            <div id="todo">
+                <p>Description</p>
+                <p>{{todoDescription}}</p>
+            </div>
+            <div id="todo">
+                <p>New Description</p>
+                <input type="text" id="description" [(ngModel)]="newTodoDescription" />
+            </div>
+        </div>
+        <div id="todo">
+            <button (click)="updateTodo()">Update</button>
+            <button [routerLink]="'/home'">Back</button>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+<div id="wrapper">
+    <h2>Login</h2>
+    <p id="loginText" *ngIf="loginText">{{loginText}}</p>
+    <div id="form">
+        <label>Username</label>
+        <input type="text" id="username" [(ngModel)]="username" />
+    </div>
+    <div id="form"> 
+        <label>Password</label>
+        <input type="password" id="password" [(ngModel)]="password" />
+    </div>
+    <button (click)="login()">LOGIN</button>
+    <button id="reg" [routerLink]="'/register'">Register</button>
+</div>

@@ -1,0 +1,37 @@
+#todoList {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    align-items: center;
+    margin: 5px 5px;
+    border: 1px solid black;
+    padding: 5px;
+    height: auto;
+}
+
+#desc {
+    width: 20%;
+    line-break: normal;
+}
+
+#name {
+    width: 20%;
+    line-break: normal;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px white solid;
+    background-color: transparent;
+    color: white;
+
+}

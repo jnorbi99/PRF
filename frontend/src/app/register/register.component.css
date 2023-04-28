@@ -1,0 +1,21 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px white solid;
+    background-color: transparent;
+    color: white;
+}

@@ -1,0 +1,39 @@
+<div id="wrapper">
+    <div>
+        <h2>Todos</h2>
+        <div id='todoList'>
+            <div id="name">Name</div>
+            <div id="desc">Description</div>
+            <div>Change Description</div>
+            <div>Delete Todo</div>
+        </div>
+        <div id='todoList' *ngFor="let todo of todos; let i = index;">
+            <div id="name">{{todo.name}}</div>
+            <div id="desc">{{todo.description}}</div>
+            <button (click)="updateTodo(todo)">Update Todo</button>
+            <button (click)="deleteTodo(todo)">Delete Todo</button>
+        </div>
+    </div>
+    <div id="create">
+        <h2>Create Todo</h2>
+        <div id="innerWrapper">
+            <label>Name</label>
+            <input type="text" id="namei" [(ngModel)]="todoName" />
+        </div>
+        <div id="innerWrapper">
+            <label>Description</label>
+            <input type="text" id="description" [(ngModel)]="todoDescription" />
+        </div>
+        <button (click)="saveTodo()">Save Todo</button>
+    </div>
+    <div id="pw">
+        <h2>Change password</h2>
+        <p id="passwordText" *ngIf="passwordText">{{passwordText}}</p>
+        <div id="innerWrapper">
+            <label>New password</label>
+            <input type="password" id="password" [(ngModel)]="password" />
+        </div>
+        <button (click)="updatePassword()">Update password</button>
+    </div>
+    <button id="logout" (click)="logout()">Logout</button>
+</div>

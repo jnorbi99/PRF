@@ -1,0 +1,62 @@
+#todoList {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    align-items: center;
+    margin: 5px 5px;
+    border: 1px solid black;
+    padding: 5px;
+    height: auto;
+}
+
+#desc {
+    width: 20%;
+    line-break: normal;
+}
+
+#name {
+    width: 20%;
+    line-break: normal;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#innerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin: 10px 0;
+}
+
+#logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px white solid;
+    background-color: transparent;
+    color: white;
+
+}
+
+#pw {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#passwordText {
+    color: green;
+}

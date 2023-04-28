@@ -1,0 +1,17 @@
+<div id="wrapper">
+    <h2>Registration</h2>
+    <div id="form">
+        <label>Username</label>
+        <input type="text" id="username" [(ngModel)]="username" />
+    </div>
+    <div id="form">
+        <label>Email</label>
+        <input type="email" id="email" [(ngModel)]="email" />
+    </div>
+    <div id="form"> 
+        <label>Password</label>
+        <input type="password" id="password" [(ngModel)]="password" />
+    </div>
+    <button (click)="registration()">Registration</button>
+    <button id="login" [routerLink]="'/login'">Login</button>
+</div>
